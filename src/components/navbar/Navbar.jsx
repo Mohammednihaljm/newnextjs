@@ -1,4 +1,4 @@
-
+import styles from '@/components/navbar/navbar.module.css'
 import Link from 'next/link'
 import React from 'react'
 
@@ -37,14 +37,19 @@ const links=[
 ];
 const Navbar = () => {
   return (
-    <div>
-        <Link href='/'>LOGONAME</Link>
-        <div>
+    <div className={styles.container}>
+        <Link href='/' className={styles.logo}>E visa</Link>
+        <div className={styles.links}>
           {links.map((link)=>(
             <Link key={link.id} href={link.url}>
               {link.title}
             </Link>
           ))}
+          <button className={styles.logout} 
+         
+  >
+            Logout
+          </button>
         </div>
         
     </div>
