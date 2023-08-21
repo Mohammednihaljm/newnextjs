@@ -38,7 +38,7 @@ const links=[
 const Navbar = () => {
   return (
     <div className={styles.container}>
-        <Link href='/' className={styles.logo}>E visa</Link>
+        <Link href='/' className={styles.logo}>E DIGIT</Link>
         <div className={styles.links}>
           {links.map((link)=>(
             <Link key={link.id} href={link.url}>

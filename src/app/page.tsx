@@ -1,17 +1,18 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import home from 'public/Home.jpg'
+import home1 from 'public/Home1.png'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.items}>
-        <h1>Easy to applay visa renew</h1>
-        <p>E-Visa is a system developed with the aim of saving passengers from long-term and tiring bureaucratic procedures, as well as creating an alternative to visas issued at the borders. Online users can apply for visas online to the countries they wish to visit.</p>
-        <button>APPLAY</button>
+        <h1 className={styles.title}>Better design your digital product</h1>
+        <p className={styles.desc}>Digital products are intangible items delivered electronically, such as music, software and ebooks. Essentially, anything that can be downloaded and used digitally can be considered a digital product. Digital products can be sold online or through brick-and-mortar retailers..</p>
+        <button className={styles.button}>See our website</button>
       </div>
       <div className={styles.items}>
-      <Image src={home} width={800} height={500}  alt='home'/>
+      <Image className={styles.img} src={home1}  alt='home'/>
       </div>
     </div>
   )
