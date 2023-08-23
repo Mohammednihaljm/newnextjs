@@ -10,10 +10,26 @@
   gap: 50px;
 }
 .title{
-  font-size: 72px;
+  font-size: 52px;
 }
 .img{
   width: 100%;
   height: 500px;
   object-fit: cover;
+  border-radius: 5px;
+}
+.desc{
+  font-size: 14px;
+  font-weight: 100;
+
+}
+.button{
+  padding: 20px;
+  cursor: pointer;
+  background-color:#d6c313;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  color: white;
+
 }
