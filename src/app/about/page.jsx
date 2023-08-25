@@ -1,12 +1,14 @@
 import React from 'react'
 import style from './page.module.css'
 import Image from 'next/image'
+import Button from "@/components/Button/Button"
+
 
 const About = () => {
   return (
     <div className={style.container}>
       <div className={style.imgContainer}>
-        <Image fill={true} src="https://www.corporatevision-news.com/wp-content/uploads/2020/11/digitalisation.jpg" alt='pictu' className={style.img}/>
+        <Image fill={true} src="https://ithemes.com/wp-content/uploads/2022/10/What-is-a-digital-product.png" alt='pictu' className={style.img}/>
         <div  className={style.imgText}>
            <h1  className={style.imgTitle}>Digital stry teler</h1>
            <h2  className={style.imgDesc}>Handcrafting award winning digital experiance</h2>
@@ -21,7 +23,7 @@ const About = () => {
         <div  className={style.item}>
           <h1>What we do</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto laudantium ipsum quasi molestiae incidunt facilis dignissimos recusandae, molestias nulla amet, reprehenderit consectetur harum officia maxime est ad illo iusto?</p>
-
+         <Button url="/contact" text="Contact"/>
         </div>
       </div>
 
